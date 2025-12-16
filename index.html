@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Define document type as HTML5 -->
+<html lang="en">
+<!-- Start of HTML document with English language -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set viewport for responsive design on mobile devices -->
+    <title>Home - Netflix</title>
+    <!-- Add Favicon -->
+    <link rel="icon" href="media/favicon.jpg" type="image/x-icon">
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to FontAwesome library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <!-- Main header container -->
+        <div class="header-left">
+            <!-- Left side of header (Logo + Nav) -->
+            <img class="logo" src="media/Netflix_2015_logo.svg" alt="Netflix">
+            <!-- Netflix Logo Image -->
+            <ul class="nav-links">
+                <!-- Navigation links list -->
+                <li class="nav-item active" data-name="home"><a href="#">Home</a></li>
+                <li class="nav-item" data-name="shows"><a href="#">Shows</a></li>
+                <li class="nav-item" data-name="movies"><a href="#">Movies</a></li>
+                <li class="nav-item" data-name="games"><a href="#">Games</a></li>
+                <li class="nav-item" data-name="latest"><a href="#">Latest</a></li>
+                <li class="nav-item" data-name="mylist"><a href="#">My List</a></li>
+                <li class="nav-item" data-name="browse"><a href="#">Browse by Languages</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <!-- Right side of header (Search, Bell, Profile) -->
+            
+            <!-- Search Box Component -->
+            <div class="search-box" id="searchBox">
+                <i class="fas fa-search search-icon" id="searchIcon"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Titles, people, genres">
+            </div>
+
+            <i class="fas fa-bell notification-icon" id="notificationIcon"></i>
+            
+            <!-- Profile Dropdown Component -->
+            <div class="profile-container" id="profileContainer">
+                <div class="profile-menu">
+                    <img src="media/manoj.jpeg" alt="Profile">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#">Settings</a>
+                    <a href="#" id="signoutBtn">Signout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Billboard) -->
+    <div class="hero-container">
+        <div class="hero-video-wrapper">
+            <video class="hero-video" id="bgVideo" autoplay muted loop playsinline>
+                <source src="media/TearsOfSteel.mp4" type="video/mp4">
+            </video>
+            <div class="hero-vignette"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="title-logo">
+                <h1>Mercy for None</h1>
+            </div>
+            
+            <div class="hero-desc">
+                Power, ambition, revenge. After his brother's murder, a former gangster returns to the underworld — ready to settle every score, by any means necessary.
+            </div>
+
+            <div class="hero-btns">
+                <button class="btn btn-play" id="mainPlayBtn">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button class="btn btn-info" id="moreInfoBtn">
+                    <i class="fas fa-info-circle"></i> More Info
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sliders Container -->
+    <div class="sliders-container">
+        
+        <!-- Slider Row 1 -->
+        <div class="slider-row">
+            <h2 class="row-title">Because you watched Kadhalikka Neramillai</h2>
+            <div class="slider-wrapper">
+                <button class="slider-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <div class="row-posters">
+                    <div class="poster"><img src="media/fifty.jpg" alt="Poster"></div>
+                    <div class="poster"><img src="media/blue.avif" alt="Poster"></div>
+                    <div class="poster"><img src="media/chetan.jpg" alt="Poster"></div>
+                    <div class="poster"><img src="media/english.webp" alt="Poster"></div>
+                    <div class="poster"><img src="media/loveinbloom.webp" alt="Poster"></div>
+                    <div class="poster"><img src="media/loveme.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/notebook.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/fifty.jpg" alt="Poster"></div>
+                    <div class="poster"><img src="media/blue.avif" alt="Poster"></div>
+                </div>
+                <button class="slider-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Slider Row 2 -->
+        <div class="slider-row">
+            <h2 class="row-title">Because you watched War 2</h2>
+            <div class="slider-wrapper">
+                <button class="slider-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <div class="row-posters">
+                    <div class="poster"><img src="media/dunkirk.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/war.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/quiet.webp" alt="Poster"></div>
+                    <div class="poster"><img src="media/ryan.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/paltan.webp" alt="Poster"></div>
+                    <div class="poster"><img src="media/sam.jpg" alt="Poster"></div>
+                    <div class="poster"><img src="media/ikuiku.jpg" alt="Poster"></div>
+                    <div class="poster"><img src="media/dunkirk.jpeg" alt="Poster"></div>
+                    <div class="poster"><img src="media/war.jpeg" alt="Poster"></div>
+                </div>
+                <button class="slider-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">Audio Description</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <button class="service-code">Service Code</button>
+        <div class="copyright">© 1997-2025 Netflix, Inc.</div>
+    </footer>
+
+    <!-- Video Player Overlay -->
+    <div id="videoPlayerOverlay" class="video-overlay hidden">
+        <div class="video-header">
+            <button id="closeVideoBtn"><i class="fas fa-arrow-left"></i> Back to Browse</button>
+        </div>
+        <video id="fullScreenPlayer" controls>
+            <source src="media/TearsOfSteel.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- More Info Modal -->
+    <div id="modalBackdrop" class="modal-backdrop hidden">
+        <div class="modal-container">
+            <button id="closeModalBtn" class="modal-close">&times;</button>
+            
+            <div class="modal-hero">
+                <video autoplay muted loop>
+                    <source src="media/TearsOfSteel.mp4" type="video/mp4">
+                </video>
+                <div class="modal-gradient"></div>
+                <div class="modal-hero-content">
+                    <h1>Mercy for None</h1>
+                    <div class="modal-controls">
+                        <button class="btn btn-play"><i class="fas fa-play"></i> Play</button>
+                        <button class="circle-btn"><i class="fas fa-plus"></i></button>
+                        <button class="circle-btn"><i class="far fa-thumbs-up"></i></button>
+                        <button class="circle-btn-muted"><i class="fas fa-volume-mute"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-info">
+                <div class="modal-left">
+                    <div class="meta-row">
+                        <span class="match">98% Match</span>
+                        <span class="year">2025</span>
+                        <span class="age">18+</span>
+                        <span class="quality">HD</span>
+                        <span class="tags"><i class="fas fa-comment-alt"></i></span>
+                    </div>
+                    <div class="modal-desc">
+                        Power, ambition, revenge. After his brother's murder, a former gangster returns to the underworld — ready to settle every score, by any means necessary.
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <div class="row"><span class="gray">Cast:</span> So Ji-sub, Huh Joon-ho, Gong Myeong, more</div>
+                    <div class="row"><span class="gray">Genres:</span> TV Dramas, Korean, TV Action & Adventure</div>
+                    <div class="row"><span class="gray">This Show is:</span> Gritty, Dark</div>
+                </div>
+            </div>
+
+            <div class="episodes-container">
+                <div class="episodes-header">
+                    <h3>Episodes</h3>
+                    <span class="series-name">Limited Series</span>
+                </div>
+                
+                <div class="episode-item">
+                    <div class="ep-index">1</div>
+                    <div class="ep-image">
+                        <img src="media/steel.jpeg" alt="Episode 1">
+                        <div class="progress-bar"><div class="progress" style="width: 0%"></div></div>
+                    </div>
+                    <div class="ep-details">
+                        <div class="ep-title-row">
+                            <h4>Episode 1</h4>
+                            <span>42m</span>
+                        </div>
+                        <p class="ep-synopsis">After Nam Gi-seok's mysterious death, Nam Gi-jun emerges from seclusion on a mission to find the perpetrator — no matter the cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
