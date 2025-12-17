@@ -51,3 +51,57 @@ netflix-clone/
     ├── fifty.jpg
     ├── blue.avif
     └── ... (other poster images)
+This project was built iteratively using an LLM (Large Language Model). Below is the chronological list of prompts used to refine the application from a basic concept to a polished product.
+
+Phase 1: Foundation & Core Layout
+Prompt 1:
+
+"create a seperate css, javascript and html file with the following requirements: Home page should autoplay the video. Play button should play the video in video player. Clicking in More info should pop-up the modal. Create full functional Netflix Homepage. Create a category wise slider (Minimum 2 sliders). Full Header and Footer (Ditto). Pixel perfect Output. Fully functional. Responsive."
+
+Phase 2: Refinement & Visuals
+Prompt 2:
+
+"add a video in the homepage that autoplays as shown in the image, the play button that plays the button in the video player is also missing. also add the the fully functional netflix homepage , also add the category wise slider. make it exactly like the images shown."
+
+Prompt 3:
+
+"make it exactly like the images attached before... Home page should autoplay the video... Responsive but keep placeholder media"
+
+Phase 3: Custom Assets & Advanced Logic
+Prompt 4:
+
+"Utilise the media as aforementioned /dont change the media in the current file. add the following changes:
+
+add media queries to adapt usage on mobile devices.
+when menu options are hovered upon they are highlighted. If not hovered upon the last selected menu is highlighted.
+The search option when selected should open a search bar in similar colour to the profile. When hovered upon, elevate.
+When the profile is hovered upon elevate.
+when the bell icon is pressed, change colour and a pop up appears...
+the drop down menu beside the user should have a drop down list...
+The sliders help to scroll the media horizontally, make it elegant and simple."
+Phase 4: UX Improvements
+Prompt 5:
+
+"add left and right arrows on the horizontal scroll blocks"
+
+Prompt 6:
+
+"add media queries to make it usable for tablets/phones/ other devices. also ensure the last selected menu is bolded, unless the user is hovering over other menu options also add comments on each line of code"
+
+Phase 5: Design Corrections & Responsiveness
+Prompt 7:
+
+"keep everything the same just change the image size in the slider to the previous size"
+
+Prompt 8:
+
+"keep everything the same just add media queries for all suitable components ensuring it is suitable for phones."
+
+Prompt 9 (Final Polish):
+
+"when the application is in mobile/tablet view due to media query slider photos arent properly visble... improve media queries also add a favicon"
+
+💿 How to Run
+Ensure you have a folder named media in the same directory as the code files.
+Populate the media folder with the assets referenced in the HTML (or update the src paths in index.html to point to your own images/videos).
+Open index.html in any modern web browser.
